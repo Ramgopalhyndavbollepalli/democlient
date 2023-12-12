@@ -57,6 +57,7 @@ export default function SignupComponent() {
           setSuccessOpen(true);
           setSuccessMessage(response.data.message);
           localStorage.setItem("token", response.data.token);
+          window.location.href = "/"
           break;
         default:
           setErrorOpen(true);
