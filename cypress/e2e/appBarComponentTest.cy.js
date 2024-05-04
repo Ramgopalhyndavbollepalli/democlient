@@ -24,14 +24,14 @@ describe("Successfully Login the User", () => {
 
     cy.get('[data-testid="loginsignup-btn"]').click();
     cy.url().should("eq", "http://54.209.196.31/login");
-    cy.get("[data-cy=email]").type("sjindam@uncc.edu");
-    cy.get("[data-cy=password]").type("Suraj");
+    cy.get("[data-cy=email]").type("nbanda@uncc.edu");
+    cy.get("[data-cy=password]").type("Nitesh");
     cy.get('[data-testid="login-btn"]').click();
 
     cy.intercept('POST', 'http://52.7.183.132:3000/app/userDetails', {
         statusCode: 200,
         body: {
-          message: 'Saisuraj Jindam',
+          message: 'Nitesh',
         },
       }).as('user details');
 

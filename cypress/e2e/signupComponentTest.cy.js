@@ -9,11 +9,11 @@ describe("Signup Page", () => {
         },
       }).as('signupRequest');
 
-      cy.get('[data-cy=email]').type('sjindam@uncc.edu');
-      cy.get('[data-cy=firstName]').type('Saisuraj');
-      cy.get('[data-cy=lastName]').type('Jindam');
-      cy.get('[data-cy=username]').type('suraj');
-      cy.get('[data-cy=password]').type('suraj');
+      cy.get('[data-cy=email]').type('nbanda@uncc.edu');
+      cy.get('[data-cy=firstName]').type('Nitesh');
+      cy.get('[data-cy=lastName]').type('Banda');
+      cy.get('[data-cy=username]').type('nitesh');
+      cy.get('[data-cy=password]').type('nitesh');
       cy.get('[data-cy=mobile]').type('123');
       cy.get('[data-cy=gender]').type('male');
 

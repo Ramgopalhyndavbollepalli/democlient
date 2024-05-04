@@ -34,7 +34,7 @@ export default function Footer() {
           <Container maxWidth="sm">
             <Typography variant="body1">
                 <center>
-              Created by Saisuraj Jindam
+              Created by Nitesh Banda
               </center>
             </Typography>
           </Container>
