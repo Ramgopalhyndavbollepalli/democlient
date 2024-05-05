@@ -47,7 +47,7 @@ export default class ProfileAvatar extends Component{
 
   async componentDidMount() {
     const token = localStorage.getItem("token");
-    const response = await axios.get("http://52.7.183.132:3000/app/userDetails", {
+    const response = await axios.get("http://34.237.5.250:3000/app/userDetails", {
       headers: {
         Authorization: "Bearer " + token,
         "Content-Type": "application/json",

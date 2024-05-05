@@ -2,7 +2,7 @@ describe("Signup Page", () => {
     it("Should Show Validation Error when existing user Signup", () => {
       cy.visit("http://54.209.196.31:3000/signup");
 
-      cy.intercept('POST', 'http://52.7.183.132:3000/app/signup', {
+      cy.intercept('POST', 'http://34.237.5.250:3000/app/signup', {
         statusCode: 201,
         body: {
           message: 'Email is already registered, Please Login',

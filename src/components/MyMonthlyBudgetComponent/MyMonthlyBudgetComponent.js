@@ -260,7 +260,7 @@ class MyMonthlyBudgetComponent extends Component {
   async componentDidMount() {
     const token = localStorage.getItem("token");
     const response = await axios.get(
-      "http://52.7.183.132:3000/app/userMonthlyBudget",
+      "http://34.237.5.250:3000/app/userMonthlyBudget",
       {
         headers: {
           Authorization: "Bearer " + token,
@@ -268,7 +268,7 @@ class MyMonthlyBudgetComponent extends Component {
         },
       }
     );
-
+    console.log(response.status);
     switch (response.status) {
       case 200:
         var count = 1;
@@ -293,7 +293,7 @@ class MyMonthlyBudgetComponent extends Component {
           alert("No Budgets Recorded, Please Add New Budgets");
           break;
       default:
-        alert(response.data.message);
+        alert("No Budgets Recorded, Please Add New Budgets");
         break; /////////////////////////////////////PROBLEM HERE
     }
   }
@@ -448,7 +448,7 @@ class MyMonthlyBudgetComponent extends Component {
 
     const token = localStorage.getItem("token");
     const response = await axios.put(
-      "http://52.7.183.132:3000/app/userMonthlyBudget",
+      "http://34.237.5.250:3000/app/userMonthlyBudget",
       reqData,
       {
         headers: {
@@ -504,7 +504,7 @@ class MyMonthlyBudgetComponent extends Component {
         this.setState({ errorOpen: !this.state.errorOpen });
       }
       const response = await axios.post(
-        "http://52.7.183.132:3000/app/userMonthlyBudget",
+        "http://34.237.5.250:3000/app/userMonthlyBudget",
         this.state.newMonthlyData,
         {
           headers: {

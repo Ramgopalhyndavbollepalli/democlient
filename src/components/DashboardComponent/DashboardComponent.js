@@ -41,7 +41,7 @@ class DashboardComponent extends Component {
   componentDidMount() {
     const token = localStorage.getItem("token");
     axios
-      .get("http://52.7.183.132:3000/app/userBudget", {
+      .get("http://34.237.5.250:3000/app/userBudget", {
         headers: {
           Authorization: "Bearer " + token,
           "Content-Type": "application/json",

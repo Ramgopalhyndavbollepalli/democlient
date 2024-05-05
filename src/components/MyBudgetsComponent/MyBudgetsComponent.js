@@ -222,7 +222,7 @@ class MyBudgetsComponent extends Component {
 
   async componentDidMount() {
     const token = localStorage.getItem("token");
-    const response = await axios.get("http://52.7.183.132:3000/app/userBudget", {
+    const response = await axios.get("http://34.237.5.250:3000/app/userBudget", {
       headers: {
         Authorization: "Bearer " + token,
         "Content-Type": "application/json",
@@ -328,7 +328,7 @@ class MyBudgetsComponent extends Component {
 
     const token = localStorage.getItem("token");
     const response = await axios.put(
-      "http://52.7.183.132:3000/app/userBudget",
+      "http://34.237.5.250:3000/app/userBudget",
       reqData,
       {
         headers: {
@@ -380,7 +380,7 @@ class MyBudgetsComponent extends Component {
         this.setState({ errorOpen: !this.state.errorOpen });
       }
       const response = await axios.post(
-        "http://52.7.183.132:3000/app/userBudget",
+        "http://34.237.5.250:3000/app/userBudget",
         {
           item: this.state.newItemName,
           budget: this.state.newBudgetValue,

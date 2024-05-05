@@ -44,7 +44,7 @@ class ProfileComponent extends Component {
 
   async componentDidMount() {
     const token = localStorage.getItem("token");
-    const response = await axios.get("http://52.7.183.132:3000/app/userProfile", {
+    const response = await axios.get("http://34.237.5.250:3000/app/userProfile", {
       headers: {
         Authorization: "Bearer " + token,
         "Content-Type": "application/json",
@@ -80,7 +80,7 @@ class ProfileComponent extends Component {
         mobile: data.get("mobile"),
         gender: this.state.user.gender,
       };
-      const response = await axios.put("http://52.7.183.132:3000/app/userDetails",
+      const response = await axios.put("http://34.237.5.250:3000/app/userDetails",
       userData,
       {
       headers: {

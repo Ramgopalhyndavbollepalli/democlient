@@ -19,7 +19,7 @@ class BarChart extends Component {
   fetchData() {
     const token = localStorage.getItem("token");
     axios
-      .get("http://52.7.183.132:3000/app/userMonthlyBudget", {
+      .get("http://34.237.5.250:3000/app/userMonthlyBudget", {
         headers: {
           Authorization: "Bearer " + token,
           "Content-Type": "application/json",

@@ -51,7 +51,7 @@ export default function SignupComponent() {
     };
     var response;
     try {
-      response = await axios.post("http://52.7.183.132:3000/app/signup", userData);
+      response = await axios.post("http://34.237.5.250:3000/app/signup", userData);
       switch (response.status) {
         case 200:
           setSuccessOpen(true);

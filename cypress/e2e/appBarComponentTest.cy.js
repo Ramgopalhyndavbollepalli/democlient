@@ -28,7 +28,7 @@ describe("Successfully Login the User", () => {
     cy.get("[data-cy=password]").type("Nitesh");
     cy.get('[data-testid="login-btn"]').click();
 
-    cy.intercept('POST', 'http://52.7.183.132:3000/app/userDetails', {
+    cy.intercept('POST', 'http://34.237.5.250:3000/app/userDetails', {
         statusCode: 200,
         body: {
           message: 'Nitesh',
